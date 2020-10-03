@@ -1,0 +1,75 @@
+
+
+
+
+/*=====================================
+        REVIEW LIST PART STYLE
+======================================*/
+.review-list {
+    margin-bottom: 50px;
+}
+
+.review-item {
+    @include flex__start;
+    padding: 30px 0px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.reviewer-img {
+    margin-right: 30px;
+
+    a {
+        img {
+            width: 100px;
+            border-radius: 8px;
+        }
+    }
+}
+
+.reviewer-meta {
+    @include flex__center;
+    justify-content: space-between;
+
+    a {
+        color: $heading__color;
+        font-weight: $medium__weight;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+.reviewer-rating {
+    display: flex;
+    margin-bottom: 13px;
+
+    li {
+        margin-right: 5px;
+
+        i {
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+
+        .active {
+            color: #ffcc23;
+        }
+    }
+}
+
+.reviewer-descrip {
+    width: 100%;
+}
+
+@media (max-width: 575px) {
+    .review-item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reviewer-img {
+        margin-bottom: 25px;
+    }
+}

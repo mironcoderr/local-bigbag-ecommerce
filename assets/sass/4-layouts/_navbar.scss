@@ -1,0 +1,223 @@
+
+/*=====================================
+            NAVBAR PART STYLE
+======================================*/
+.navbar-part {
+    padding: 25px 0px;
+    background: #fbf2f2;
+
+    .container {
+        max-width: 100%;
+        padding: 0px 25px;
+    }
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+    @include cursor__transition;
+}
+
+.navbar-content {
+    @include flex__center;
+    justify-content: space-between;
+}
+
+.left-widget {
+    li {
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+}
+
+.left-bar {
+    margin-right: 30px;
+}
+
+.navbar-logo {
+    a {
+        img {
+            width: 160px;
+            height: auto;
+        }
+    }
+}
+
+.navbar-nav {
+    .active {
+        .nav-link {
+            color: $brand__color;
+        }
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 15px 25px;
+        border-radius: 8px;
+        color: $heading__color;
+        font-size: 14px;
+        font-weight: $medium__weight;
+        text-transform: uppercase;
+        @include cursor__transition;
+        border-bottom: 1px solid #e8e8e8;
+
+        &:hover {
+            color: $wh__color;
+            background: $brand__color;
+        }
+
+        i {
+            margin-right: 8px;
+        }
+    }
+
+    .nav-item {
+        &:last-child {
+            .nav-link {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+/*=====================================
+        NAVBAR RESPONSIVE STYLE
+======================================*/
+@media (max-width: 767px) {
+    .navbar-part {
+        padding: 18px 0px;
+
+        .container {
+            padding: 0px 15px;
+        }
+    }
+
+    .round-icon {
+        li {
+            margin-right: 8px;
+
+            a {
+                i {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .navbar-logo {
+        a {
+            img {
+                width: 120px;
+                margin: 0px 15px;
+            }
+        }
+    }
+
+    .left-widget {
+        li {
+            &:nth-child(2) {
+                display: block;
+            }
+        }
+    }
+
+    .left-bar {
+        margin-right: 0px;
+    }
+
+    .navbar-form {
+        display: none;
+    }
+
+    .right-widget {
+        li {
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 351px) and (max-width: 575px) {
+    .round-icon {
+        li {
+            margin-right: 12px;
+
+            a {
+                i {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 401px) and (max-width: 575px) {
+    .round-icon {
+        li {
+            margin-right: 15px;
+
+            a {
+                i {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .navbar-part {
+        .container {
+            max-width: 550px;
+        }
+    }
+
+    .round-icon {
+        li {
+            margin-right: 18px;
+
+            a {
+                i {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .left-bar {
+        margin-right: 15px;
+    }
+
+    .navbar-logo {
+        a {
+            img {
+                width: 130px;
+            }
+        }
+    }
+
+    .navbar-form {
+        margin: 0px 30px;
+    }
+}
+

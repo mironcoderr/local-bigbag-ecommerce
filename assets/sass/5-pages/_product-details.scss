@@ -1,0 +1,257 @@
+
+
+/*=====================================
+        SINGLE BANNER PART STYLE
+======================================*/
+.single-banner {
+    padding: 60px 0px;
+    background: #fbf2f2;
+}
+
+.single-content {
+    text-align: center;
+
+    h2 {
+        font-size: 35px;
+        margin-bottom: 7px;
+    }
+}
+
+/*=====================================
+        SINGLE PRODUCT PART STYLE
+======================================*/
+.single-product {
+    padding: 100px 0px 0px;
+}
+
+.single-product-slider {
+    border-radius: 8px;
+    border: 2px solid #e8e8e8;
+    margin-bottom: 30px;
+    
+    img {
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+.single-thumb-slider {
+    img {
+        border-radius: 8px;
+        border: 2px solid #e8e8e8;
+        margin: 0px 15px;
+    }
+
+    .slick-slide {
+        cursor: pointer;
+    }
+
+    .slick-center {
+        border: 2px solid $brand__color;
+    }
+}
+
+.single-product-info {
+    margin-left: 50px;
+}
+
+.single-product-meta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.single-product-name {
+    h3 {
+        font-weight: $medium__weight;
+    }
+}
+
+.single-page-slider {
+    li {
+        a {
+            i {
+                background: $light__icon__bg;
+            }
+        }
+    }
+}
+
+.single-product-review {
+    @include flex__center;
+    justify-content: flex-start;
+
+    li {
+        margin-right: 5px;
+
+        i {
+            font-size: 14px;
+            color: #ffcc23;
+        }
+    }
+}
+
+.single-product-price {
+    h3 {
+        del {
+            font-size: 20px;
+            color: $brand__color;
+            font-weight: $medium__weight;
+            margin-right: 8px;
+        }
+    }
+}
+
+.single-product-describe {
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.single-product-widget {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+
+    h5 {
+        margin-bottom: 15px;
+    }
+
+    ul {
+        @include flex__center;
+        justify-content: flex-start;
+
+        li {
+            margin-right: 15px;
+        }
+    }
+}
+
+.product-quantity {
+    ul {
+        li {
+            input {
+                width: 100px;
+                padding: 0px 15px;
+                height: 45px;
+                border-radius: 8px;
+                border: 2px solid #bbbbbb;
+
+                &:focus-within {
+                    border-color: $brand__color;
+                }
+            }
+
+            .btn {
+                height: 45px;
+                padding: 11px 30px;
+            }
+        }
+    }
+}
+
+.wishlist-icon {
+    i {
+        height: 45px;
+        line-height: 43px;
+        padding: 0px 13px;
+        border-radius: 8px;
+        color: $brand__color;
+        border: 2px solid $brand__color;
+        text-shadow: $primary__text__shadow;
+
+        &:hover {
+            color: $wh__color;
+            background: $brand__color;
+        }
+    }
+}
+
+.payment-card {
+    ul {
+        li {
+            a {
+                img {
+                    width: 60px;
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+    SINGLE PRODUCT RESPONSIVE STYLE
+======================================*/
+@media (max-width: 991px) {
+    .single-product {
+        padding: 60px 0px 30px;
+    }
+
+    .single-thumb-slider {
+        margin-bottom: 50px;
+    }
+
+    .single-product-info {
+        margin-left: 0px;
+    }
+
+    .single-product-name {
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    .product-quantity {
+        ul {
+            li {
+                input {
+                    width: 80px;
+                }
+
+                .btn {
+                    width: 135px;
+                    padding: 11px 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .single-product-info {
+        margin-left: 30px;
+    }
+}
+
+/*=====================================
+            RELATED PART STYLE
+======================================*/
+.related-part {
+    background: #f9f9f9;
+    padding: 100px 0px 0px;
+}
+
+/*=====================================
+        PRODUCT DETAILS PART STYLE
+======================================*/
+.details-descrip {
+    p {
+        line-height: 28px;
+
+        span {
+            display: block;
+            margin-top: 30px;
+        }
+    }
+}
+
+.details-part {
+    padding: 65px 0px 50px;
+}
+
+@media (max-width: 767px) {
+    .details-part {
+        padding: 25px 0px 25px;
+    }
+}

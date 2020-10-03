@@ -1,0 +1,29 @@
+
+
+
+/*=====================================
+        SLIDER RANGE PART STYLE
+======================================*/
+#slider-range {
+    margin-bottom: 15px;
+    border-radius: 30px;
+
+    span {
+        border-radius: 50%;
+    }
+}
+
+#amount {
+    color: $brand__color;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    background: none;
+    text-align: center;
+    width: 100%;
+}
+
+.ui-state-active {
+    background: $brand__color !important;
+    border-color: $brand__color !important;
+}

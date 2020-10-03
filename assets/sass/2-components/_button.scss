@@ -1,0 +1,44 @@
+
+
+
+/*=====================================
+            ALL BUTTON STYLE
+======================================*/
+.btn {
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 14px 32px;
+    letter-spacing: 0.5px;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.btn-inline {
+    color: $wh__color;
+    background: $brand__color;
+
+    &:hover {
+        color: $wh__color;
+        background: $brand__color;
+    }
+}
+
+.btn-light {
+    background: #f1f1f1;
+}
+
+.btn-outline {
+    color: $brand__color !important;
+    border: 2px solid $brand__color;
+
+    &:hover {
+        color: $wh__color !important;
+        background: $brand__color;
+        border-color: $brand__color;
+    }
+}

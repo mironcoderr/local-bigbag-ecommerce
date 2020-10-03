@@ -1,0 +1,180 @@
+
+
+
+/*=====================================
+        PRODUCT LIST PART STYLE
+======================================*/
+.product-list {
+    background: #f9f9f9;
+    padding: 100px 0px;
+}
+
+.product-list-bar {
+    margin-bottom: 30px;
+
+    h4 {
+        padding: 15px 0px;
+        border-bottom: 1px solid #e8e8e8;
+    }
+}
+
+.color-filter {
+    li {
+        margin: 15px 0px;
+
+        a {
+            @include flex__center;
+            justify-content: space-between;
+
+            &:hover {
+                p {
+                    color: $brand__color;
+                }
+            }
+
+            span {
+                width: 80px;
+                padding: 3px 0px;
+                text-align: center;
+                border-radius: 8px;
+                color: $wh__color;
+                font-size: 13px;
+            }
+
+            p {
+                color: $body__color;
+            }
+        }
+    }
+}
+
+.clr-1 {
+    background: blue;
+}
+
+.clr-2 {
+    background: green;
+}
+
+.clr-3 {
+    background: orange;
+}
+
+.clr-4 {
+    background: purple;
+}
+
+.product-size {
+    li {
+        margin: 15px 0px;
+
+        a {
+            @include flex__center;
+            justify-content: space-between;
+
+            &:hover {
+                h5,
+                p {
+                    color: $brand__color;
+                }
+            }
+
+            h5 {
+                font-size: 16px;
+                font-weight: $medium__weight;
+            }
+
+            p {
+                color: $body__color;
+            }
+        }
+    }
+}
+
+.product-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        margin: 5px;
+        
+        a {
+            font-size: 14px;
+            color: #555555;
+            padding: 3px 18px;
+            border-radius: 30px;
+            border: 1px solid #e8e8e8;
+            text-transform: capitalize;
+
+            &:hover {
+                color: $wh__color;
+                background: $brand__color;
+                border-color: $brand__color;
+            }
+        }
+    }
+}
+
+.product-filter {
+    background: $wh__color;
+    border-radius: 8px;
+    padding: 15px 25px;
+    margin: 0px 15px 15px;
+    @include flex__center;
+    justify-content: space-between;
+}
+
+.product-card-type {
+    display: flex;
+
+    li {
+        margin-left: 12px;
+
+        i {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+            background: $light__icon__bg;
+        }
+    }
+}
+
+.grid-verti.active,
+.grid-hori.active {
+    i {
+        color: $wh__color;
+        background: $brand__color;
+    }
+}
+
+/*=====================================
+     PRODUCT LIST RESPONSIVE STYLE
+======================================*/
+@media (max-width: 575px) {
+    .product-filter {
+        flex-direction: column;
+        margin: 0px 0px 15px;
+    }
+
+    .product-page-number {
+        margin-bottom: 12px;
+    }
+
+    .custom-select {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .product-list {
+        padding: 60px 0px 30px;
+
+        .row {
+            flex-direction: column-reverse;
+        }
+    }
+}

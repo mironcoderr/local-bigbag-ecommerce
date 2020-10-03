@@ -1,0 +1,64 @@
+
+
+
+/*=====================================
+            BTMBAR PART STYLE
+======================================*/
+.btmbar-part {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 3;
+    background: $wh__color;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px -5px 15px 0px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.btmbar-widget {
+    @include flex__center;
+    justify-content: space-between;
+
+    li {
+        a {
+            @include flex__center;
+            flex-direction: column;
+            padding: 8px 22px;
+            border-radius: 8px;
+
+            &:hover {
+                background: #f5f5f5;
+
+                i {
+                    color: $brand__color;
+                }
+
+                span {
+                    color: $brand__color;
+                }
+            }
+
+            i {
+                color: #555555;
+                font-size: 13px;
+                text-shadow: $primary__text__shadow;
+            }
+
+            span {
+                color: #555;
+                font-size: 11px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+/*=====================================
+     BTMBAR PART RESPONSIVE STYLE
+======================================*/
+@media (max-width: 575px) {
+    .btmbar-part {
+        display: block;
+    }
+}

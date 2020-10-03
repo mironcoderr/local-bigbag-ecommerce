@@ -1,0 +1,54 @@
+
+
+
+/*=====================================
+        ROUND SHAPE ICON STYLE
+======================================*/
+.round-icon {
+    display: flex;
+
+    li {
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        a {
+            position: relative;
+
+            i {
+                font-size: 14px;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+                color: $light__icon__color;
+                background: $wh__color;
+                text-shadow: $primary__text__shadow;
+                @include cursor__transition;
+
+                &:hover {
+                    color: $wh__color;
+                    background: $brand__color;
+                    border-color: $wh__color;
+                }
+            }
+
+            sup {
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                height: 18px;
+                line-height: 18px;
+                padding: 0px 5px;
+                border-radius: 30px;
+                background: $brand__color;
+                color: $wh__color;
+                font-size: 12px;
+                text-shadow: $primary__text__shadow;
+            }
+        }
+    }
+}

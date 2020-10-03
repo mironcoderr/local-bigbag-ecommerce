@@ -1,0 +1,69 @@
+
+
+
+
+/*=====================================
+            DROPDOWN MENU STYLE
+======================================*/
+.dropdown-menu {
+    border: none;
+    padding: 0px;
+    width: 240px;
+    border-top: 2px solid $brand__color;
+    box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    @include cursor__transition;
+}
+
+.dropdown-item {
+    color: #777;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 25px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #eee !important;
+    
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover {
+        color: $wh__color;
+        background: $brand__color;
+    }
+}
+
+.header-widget {
+    .dropdown {
+        &:hover {
+            .dropdown-menu {
+                visibility: visible;
+                opacity: 1;
+                top: 50px;
+            }
+        }
+
+        .dropdown-menu {
+            display: block;
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+}
+
+.navbar-nav {
+    margin-bottom: 100px;
+
+    .dropdown-menu {
+        display: none;
+        width: 100%;
+        height: 150px;
+        overflow-y: scroll;
+    }
+
+    .nav-item.active {
+        .dropdown-menu {
+            display: block;
+        }
+    }
+}

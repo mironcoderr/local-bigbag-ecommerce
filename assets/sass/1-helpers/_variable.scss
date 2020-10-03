@@ -1,0 +1,42 @@
+
+
+// =====================================
+//       ALL TYPOGRAPHY VARIABLES
+//======================================
+$h1__size: 45px;
+$h2__size: 28px;
+$h3__size: 24px;
+$h4__size: 20px;
+$h5__size: 18px;
+$body__size: 16px;
+
+$regular__weight: 400;
+$medium__weight: 500;
+$semi__weight: 600;
+$bold__weight: 700;
+
+$primary__family: 'Heebo', sans-serif;
+
+// =====================================
+//         ALL COLOR VARIABLES
+//======================================
+$body__color: #888;
+$wh__color: #fff;
+$brand__color: #dc3545;
+$heading__color: #232d3b;
+$border__color: #e8e8e8;
+$placeholder__color: #777;
+$light__icon__bg: #f5f5f5;
+$light__icon__color: #555;
+
+$primary__gradient: linear-gradient(to right, #ff7060, #ff6025);
+$secondary__gradient: linear-gradient(to right, #d26356, #e3511a);
+
+// =====================================
+//         ALL SHADOW VARIABLES
+//======================================
+// BOX SHADOW
+$primary__box__shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.1);
+
+// TEXT SHADOW
+$primary__text__shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);

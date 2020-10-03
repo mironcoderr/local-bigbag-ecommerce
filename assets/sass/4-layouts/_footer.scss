@@ -1,0 +1,160 @@
+
+
+/*=====================================
+            FOOTER PART STYLE
+======================================*/
+.footer-part {
+    padding: 80px 0px 0px;
+}
+
+.footer-about {
+    a {
+        img {
+            width: 160px;
+            margin-bottom: 25px;
+        }
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.footer-icon {
+    li {
+        a {
+            i {
+                background: $light__icon__bg;
+            }
+        }
+    }
+}
+
+.footer-heading {
+    h3 {
+        margin-bottom: 25px;
+    }
+
+    p {
+        margin-bottom: 25px;
+    }
+}
+
+.footer-widget {
+    @include flex__center;
+    justify-content: space-between;
+
+    ul {
+        li {
+            margin: 15px 0px;
+
+            a {
+                color: $body__color;
+
+                &:hover {
+                    color: $brand__color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    padding: 15px 0px;
+    background: $brand__color;
+    margin-top: 80px;
+
+    .container {
+        @include flex__center;
+        justify-content: space-between;
+
+        p {
+            color: #eeeeee;
+            font-size: 15px;
+
+            a {
+                color: $wh__color;
+            }
+        }
+
+        ul {
+            li {
+                display: inline-block;
+
+                a {
+                    img {
+                        width: 40px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=====================================
+        FOOTER RESPONSIVE STYLE
+======================================*/
+@media (max-width: 767px) {
+    .footer-part {
+        padding: 60px 0px 0px;
+    }
+
+    .footer-about {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .footer-icon {
+        @include flex__center;
+
+        li {
+            margin: 0px 7px !important;
+
+            a {
+                i {
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .footer-heading {
+        text-align: center;
+    }
+
+    .footer-widget {
+        width: 290px;
+        margin: 0 auto 50px;
+    }
+
+    .footer-bottom {
+        padding: 15px 0px 60px;
+        margin-top: 60px;
+
+        .container {
+            flex-direction: column;
+            text-align: center;
+
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .footer-bottom {
+        padding: 15px 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer-widget {
+        margin-bottom: 30px;
+    }
+}

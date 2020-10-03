@@ -1,0 +1,17 @@
+
+
+/*=====================================
+        SELECT OPTION PART STYLE
+======================================*/
+.custom-select {
+    height: 40px;
+    width: 250px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:focus {
+        border-color: $brand__color;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,22 @@
+
+
+
+
+/*=====================================
+            SECTION HEADING STYLE
+======================================*/
+.section-heading {
+    @include flex__center;
+    justify-content: space-between;
+    padding: 0px 0px 50px;
+}
+
+@media (max-width: 575px) {
+    .section-heading {
+        flex-direction: column;
+
+        h2 {
+            margin-bottom: 25px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+
+
+
+/*=====================================
+        PAGINATION PART STYLE
+======================================*/
+.pagination {
+    align-items: center;
+    justify-content: center;
+}
+
+.page-item {
+    margin: 0px 6px;
+
+    &:first-child,
+    &:last-child {
+        .page-link {
+            border-radius: 50%;
+        }
+    }
+
+    .active {
+        color: $wh__color;
+        background: $brand__color;
+    }
+}
+
+.page-link {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    padding: 0px;
+    color: $body__color;
+    background: $wh__color;
+
+    &:hover {
+        color: $wh__color;
+        background: $brand__color;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+/*=====================================
+      PAGINATION RESPONSIVE STYLE
+======================================*/
+@media (max-width: 575px) {
+    .page-link {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .pagi-ghape {
+        margin-bottom: 60px;
+    }
+}

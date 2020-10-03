@@ -1,0 +1,118 @@
+
+/*========================================
+
+-----------------------------
+## TABLE OF COMMON STYLE
+-----------------------------
+01. COMMON CSS
+
+-----------------------------
+## TABLE OF COMPONENT STYLE
+-----------------------------
+01. DROPDOWN MENU
+02. ROUND ICON
+03. ACCORDION
+04. BUTTON
+05. FORM
+06. SLIDER ARROW
+07. BREADCRUMB
+08. NAV TABS
+09. STAR RATING
+10. SLIDER RANGE
+11. SELECT OPTION
+12. PAGINATION
+
+-----------------------------
+## TABLE OF ELEMENT STYLE
+-----------------------------
+01. CART LIST
+02. SECTION HEADING
+03. PRODUCT CARD
+04. REVIEW LIST
+
+-----------------------------
+## TABLE OF LAYOUT STYLE
+-----------------------------
+01. HEADER
+02. NAVBAR
+03. SIDEBAR
+04. BTMBAR
+05. FOOTER
+
+-----------------------------
+## TABLE OF INDEX PAGE STYLE
+-----------------------------
+01. BANNER PART
+02. OFFER PART
+03. TRENDING PART
+04. BEST SELL PART
+05. NEW PART
+06. ADD PART
+
+------------------------------------
+## TABLE OF PRODUCT LIST PAGE STYLE
+------------------------------------
+01. PRODUCT LIST PART
+
+---------------------------------------
+## TABLE OF PRODUCT DETAILS PAGE STYLE
+---------------------------------------
+01. SINGLE BANNER PART
+02. SINGLE PRODUCT PART
+03. RELATED PART
+04. PRODUCT DETAILS PART
+
+=========================================*/
+
+
+//========================================
+//          1 - HELPERS FOLDER
+//========================================
+@import "1-helpers/_font.scss";
+@import "1-helpers/_variable.scss";
+@import "1-helpers/_mixin.scss";
+@import "1-helpers/_common.scss";
+
+//========================================
+//          2 - COMPONENTS FOLDER
+//========================================
+@import "2-components/_dropdown.scss";
+@import "2-components/_round-icon.scss";
+@import "2-components/_accordion.scss";
+@import "2-components/_button.scss";
+@import "2-components/_form.scss";
+@import "2-components/_slider-arrow.scss";
+@import "2-components/_breadcrumb.scss";
+@import "2-components/_nav-tabs.scss";
+@import "2-components/_star-rating.scss";
+@import "2-components/_slider-range.scss";
+@import "2-components/_select-option.scss";
+@import "2-components/_pagination.scss";
+
+//=======================================
+//          3 - ELEMENTS FOLDER
+//=======================================
+@import "3-elements/_cart-list.scss";
+@import "3-elements/_section-heading.scss";
+@import "3-elements/_product-card.scss";
+@import "3-elements/_review-list.scss";
+
+//=======================================
+//          4 - LAYOUTS FOLDER
+//=======================================
+@import "4-layouts/_header.scss";
+@import "4-layouts/_navbar.scss";
+@import "4-layouts/_sidebar.scss";
+@import "4-layouts/_btmbar.scss";
+@import "4-layouts/_footer.scss";
+
+//=======================================
+//          5 - PAGES FOLDER
+//=======================================
+@import "5-pages/_index.scss";
+@import "5-pages/_product-list.scss";
+@import "5-pages/_product-details.scss";
+
+//=======================================
+//          6 - RESPONSIVE FOLDER
+//=======================================
